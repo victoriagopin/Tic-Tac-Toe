@@ -12,6 +12,7 @@
 body {
     color: var(--orange);
     font-family: 'Finger Paint', cursive;
+    background-color: var(--winning-blocks);
 }
 
 h1 {
@@ -41,20 +42,22 @@ h1 {
     width: 150px;
     display: flex;
     align-items: center;
+    justify-content: center;
     color: var(--orange);
     font-size: 120px;
     border-right: 2px solid;
     border-bottom: 2px solid;
 }
 
-/*
-.box:nth-child(3n){
+
+.box:nth-child(3n) {
     border-right: none;
 }
-.box:nth-child(6) ~ .box{
-    border-bottom:none;
+
+.box:nth-child(6)~.box {
+    border-bottom: none;
 }
-*/
+
 
 button {
     padding: 10px 20px;
@@ -62,5 +65,13 @@ button {
     background-color: var(--orange);
     color: #333;
     border-color: var(--orange);
+    font-size: 18px;
+    transition: 200ms transform;
+    font-weight: 600;
 
+}
+
+button:hover {
+    cursor: pointer;
+    transform: translate(-2px);
 }
