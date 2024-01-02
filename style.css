@@ -12,12 +12,13 @@
 body {
     color: var(--orange);
     font-family: 'Finger Paint', cursive;
-    background-color: grey;
+
 }
 
 h1 {
     font-size: 54px;
     text-transform: uppercase;
+    margin-bottom: 30px;
 }
 
 .container {
